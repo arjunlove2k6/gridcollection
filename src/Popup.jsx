@@ -7,15 +7,11 @@ class Popup extends React.Component {
     super(props);
     
   }
-  // const [show, setShow] = useState(false);
-
-  // const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
   
   render() {
     return (
       <span>
-      <Modal className={'myModal'} show={this.props.show} onHide={this.props.togglePopup}>
+      <Modal show={this.props.show} onHide={this.props.togglePopup}>
         <Modal.Header>
           <Modal.Title>{this.props.title}</Modal.Title>
         </Modal.Header>

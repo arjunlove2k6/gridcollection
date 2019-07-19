@@ -49,10 +49,12 @@ border-radius: 10px;
   display: flex;
 }
 
-.myModal {
-  width: 90vw;    /* Occupy the 90% of the screen width */
+/* Occupy the 90% of the screen width */
+/* .myModal {
+  width: 70%;    
   max-width: 90vw;
-} 
+  overflow: hidden;
+}  */
 
 .carousel .carousel-indicators li {
   box-sizing: content-box;
@@ -104,4 +106,22 @@ border-radius: 3px;
   margin-bottom: -7px;
   /* border: 1px solid indigo; */
   border-radius: 10px;
+}
+
+.modal-dialog {
+  position: absolute;
+  top: 90px;
+  right: 100px;
+  bottom: 0;
+  left: 120px;
+  z-index: 10040;
+  overflow: auto;
+  overflow-y: auto;
+  height: 75%;
+  max-width: 75% !important;
+}
+
+.modal-content {
+  height: 100% !important;
+  width: 100% !important;
 }
